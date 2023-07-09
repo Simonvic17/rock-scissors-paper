@@ -2,7 +2,7 @@ function playerSelection() {
 	let userInput = prompt("Write your choice between Rock, Paper and Scissors");
 	let user = userInput.toLowerCase();
 		console.log("You choose: " + user);
-		return user		
+		return user;	
 }
 
 
@@ -93,7 +93,8 @@ function playRound(player1, computer1) {
 
 	if(times >= 5){
 		localStorage.clear();
-
+        console.log("<<<< GAME OVER >>>>")
+        console.log("******************")
 		if(cScore == pScore ){
 			console.log("It is a tie!!! Let's play again!!!");
 		}
