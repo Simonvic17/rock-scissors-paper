@@ -88,3 +88,21 @@ function playRound(player1, computer1) {
   const player = playerSelection();
   const computer = getComputerChoice();
   playRound(player, computer);
+
+  function game(){
+
+	if(times >= 5){
+		localStorage.clear();
+
+		if(cScore == pScore ){
+			console.log("It is a tie!!! Let's play again!!!");
+		}
+		else if(cScore > pScore){
+			console.log("Computer outsmart you Human, you have to try harder!!");
+		} else {
+			console.log("You showed the computer that you are the boss!!!");
+		}
+	}
+}
+
+game()
